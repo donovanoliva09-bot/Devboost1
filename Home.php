@@ -69,6 +69,10 @@
   </main>
   <footer>
     <p>Created by ¡Superate! ADOC students🚀</p>
+    <p>Donovan Alexis Oliva Berciano</p>
+    <p>Dayana Nicole Mangandi Menjivar</p>
+    <p>Carolina Giselle Elias Alvarenga</p>
+    <p>Alison Fernanda Amaya Hernandez</p>
   </footer>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
