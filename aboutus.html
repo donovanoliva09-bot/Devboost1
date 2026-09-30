@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | DevBoost</title>
+  <link rel="stylesheet" href="css/contacandaboutus.css">
+</head>
+<body class="fade-in">
+  <header>
+    <div class="logo" onclick="window.location.href='Home.php'">
+      <img src="img/logo1.png" alt="Cohete" class="icon" />
+      <span>DevBoost</span>
+    </div>
+
+    <!-- Botón hamburguesa -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav id="nav-menu">
+      <a href="Home.php">Home</a>
+      <a href="aboutus.html" class="active">About Us</a>
+      <a href="contactus.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="about-hero">
+      <h1>About Us</h1>
+      <p>Get to know the team behind DevBoost: passionate about programming, creativity, and making learning fun.</p>
+    </section>
+    <section class="about-content">
+      <div class="about-img">
+        <img src="img/TEAM.jpg" alt="Team working in space">
+      </div>
+      <div class="about-text">
+        <h2>Our Mission</h2>
+        <p>
+          At DevBoost, we believe in igniting creativity and empowering aspiring programmers at every level. Our platform is built for dreamers, builders, and explorers—just like you!
+        </p>
+        <div class="about-skills">
+          <h3>Our Skills</h3>
+          <ul>
+            <li>
+              <span>Web Development</span>
+              <div class="progress"><div style="width: 90%"></div></div>
+            </li>
+            <li>
+              <span>Creative Learning</span>
+              <div class="progress"><div style="width: 95%"></div></div>
+            </li>
+            <li>
+              <span>Community Support</span>
+              <div class="progress"><div style="width: 85%"></div></div>
+            </li>
+          </ul>
+        </div>
+        <div class="about-stats">
+          <div>
+            <h4>+5</h4>
+            <p>Years Experience</p>
+          </div>
+          <div>
+            <h4>1000+</h4>
+            <p>Projects Shared</p>
+          </div>
+          <div>
+            <h4>300+</h4>
+            <p>Happy Learners</p>
+          </div>
+        </div>
+        <a href="contactus.html" class="btn">Contact Us</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Created by ¡Superate! ADOC students🚀</p>
+  </footer>
+  <script src="transition.js"></script>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

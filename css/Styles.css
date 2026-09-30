@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', Arial, sans-serif;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-section {
+  flex: 1;
+  position: relative;
+}
+
+.overlay {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  margin-top: 5%;
+  border-radius: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right-section {
+  flex: 1;
+  background-color: #f3f0fc;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.right-section h2{
+  color: #3E2350;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  height: 100px;
+}
+
+.logo p {
+  font-size: 0.8em;
+  color: #333;
+  padding: 0px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.register-form h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+  padding-top: 25px;
+}
+
+
+input[type="text"], input[type="email"], input[type="password"] {
+  width: 97%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+  font-size: 1em;
+}
+
+input[type="text"]:first-child {
+  flex: 1;
+}
+
+input[type="text"]:last-child {
+  flex: 1;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #3E2350;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-link a {
+  color: #5b28b0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.success {
+  position: absolute;
+  top: 50px;
+  color: rgb(173, 225, 255);
+  font-size: 18px;
+}
+
+.error {
+  position: absolute;
+  top: 50px;
+  color: rgb(255, 173, 173);
+  font-size: 18px;
+}
+
+@media (max-width:800px){
+.left-section{
+ width: 40%;
+  }
+
+ .overlay {
+  margin-top: 10%;
+}
+
+.overlay img{
+  width: 350px;
+}
+
+.overlay h1 {
+  font-size: 1.5em;
+  color: #3E2350;
+}
+
+.logo img {
+  height: 80px;
+}
+
+.right-section {
+  padding: 20px;
+}
+
+.register-form h2 {
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+  width: 88%;
+  font-size: 0.80em;
+}
+.btn {
+ width: 95%;
+ }
+ .login-link {
+  font-size: 0.90em;
+}
+
+.login-link a {
+  font-size: 0.90em;
+}
+}
+
+
+@media (max-width:480px){
+
+  .left-section {
+    display: none;
+  }
+
+  .right-section {
+    flex: 1 1 100%;
+    width: 101%;
+    border-radius: 30px;
+  }
+
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.logo p {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+.register-form h2 {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.right-section h2{
+  color: #000;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+  width: 90%;
+  font-size: 0.80em;
+  background-color: white;
+}
+.btn {
+ width: 90%;
+ }
+ .login-link {
+  font-size: 0.90em;
+}
+
+.login-link a {
+  font-size: 0.90em;
+}
+
+}

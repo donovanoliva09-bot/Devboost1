@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+body {
+  background: #f6f6f6;
+  margin: 0;
+  font-family: 'Orbitron', Arial, sans-serif;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3c0062;
+  height: 70px;
+  width: 100%;
+  padding: 0 32px;
+  box-sizing: border-box;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logoMenu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.logoMenu img {
+  max-width: 32px;
+  height: auto;
+  display: block;
+}
+
+.logo-text {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.titulo-navbar {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  flex: 1;
+  text-align: center;
+  margin: 0;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.profile-icons {
+  display: flex;
+  align-items: center;
+}
+
+/* Main content styles */
+.instructions-main {
+  max-width: 1100px;
+  margin: 34px auto 0 auto;
+  background: #fff;
+  border-radius: 10px;
+  padding: 36px 32px 32px 32px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.10);
+  position: relative;
+  min-height: 520px;
+}
+
+.back-arrow {
+  position: absolute;
+  left: 26px;
+  top: 26px;
+  transition: transform 0.2s;
+  z-index: 2;
+}
+.back-arrow:hover {
+  transform: scale(1.12) translateX(-5px);
+}
+
+.project-title {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 22px;
+  margin-left: 70px;
+  margin-top: 0;
+  color: #232323;
+}
+
+.content-area {
+  display: flex;
+  gap: 36px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 0;
+}
+
+.project-img-area {
+  flex: 0 0 320px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.project-img {
+  width: 235px;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(60,0,98,0.07);
+  border: 4px solid #7c5eb7;
+  background: #232323;
+  object-fit: contain;
+}
+
+.instructions-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info-list > div {
+  margin-bottom: 10px;
+}
+
+.tools-list ul {
+  margin: 5px 0 0 16px;
+  padding: 0;
+}
+
+.tools-list li {
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+
+.vs-link {
+  color: #0078d7;
+  text-decoration: underline;
+}
+
+.instructions-area b {
+  color: #232323;
+  font-size: 16px;
+}
+
+.instructions-area ol {
+  margin: 5px 0 0 18px;
+  padding: 0;
+  font-size: 15px;
+}
+
+.details {
+  margin-top: 18px;
+  margin-bottom: 3px;
+}
+.details b {
+  font-size: 17px;
+}
+.details p {
+  font-size: 15px;
+  color: #232323;
+}
+
+.buttons-row {
+  display: flex;
+  gap: 18px;
+  margin-top: 16px;
+  align-items: center;
+}
+
+/* Heart (favorito) button */
+.heart-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  transition: background 0.18s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heart-shape {
+  transition: fill 0.18s;
+}
+.heart-icon.active .heart-shape {
+  fill: #6a2ca1; /* Morado cuando es favorito */
+}
+
+.heart-icon:hover {
+  background: #ece3fc;
+}
+
+/* DONE button */
+.done-btn {
+  width: 120px;
+  height: 42px;
+  background-color: #7c5eb7;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  box-shadow: 0 2px 12px rgba(60,0,98,0.08);
+  transition: background-color 0.18s, transform 0.15s;
+}
+
+.done-btn:hover {
+  background-color: #3c0062;
+  transform: scale(1.05);
+}
+
+/* Visual Studio Code logo and link */
+.vscode-download {
+  position: absolute;
+  right: 36px;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  text-decoration: none;
+}
+
+.vscode-logo {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+}
+
+.vscode-text {
+  color: #232323;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .instructions-main {
+    padding: 14px 6px 22px 6px;
+  }
+  .content-area {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .project-img-area {
+    justify-content: flex-start;
+  }
+  .project-title {
+    margin-left: 52px;
+    font-size: 1.3rem;
+  }
+  .vscode-download {
+    right: 10px;
+    bottom: 10px;
+  }
+}

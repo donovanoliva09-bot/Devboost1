@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', Arial, sans-serif;
+  background: #e8e8ea;
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.navbar {
+  background: #50148c;
+  padding: 0 48px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  z-index: 101; 
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 38px;
+  width: auto;
+  margin-right: 8px;
+}
+
+.logo-text {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-link {
+  color: #d1b7f7;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav-link.active {
+  color: white;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.profile-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* Botón hamburguesa */
+.hamburger-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 102; 
+}
+
+.hamburger-btn svg {
+  width: 32px;
+  height: 32px;
+}
+
+
+main {
+  padding: 32px 48px 0 48px;
+}
+
+.back-arrow {
+  display: inline-block;
+  margin-bottom: 18px;
+  margin-right: 10px;
+  vertical-align: middle;
+  transition: transform 0.18s;
+}
+
+.back-arrow:hover {
+  transform: scale(1.07) translateX(-3px);
+  cursor: pointer;
+}
+
+.projects {
+  display: flex;
+  gap: 32px;
+  margin-top: 32px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: #c9b3f7;
+  border-radius: 20px;
+  box-shadow: 0 2px 12px rgba(80,20,140,0.08);
+  width: 270px;
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.2s;
+  margin-bottom: 24px;
+}
+
+.project-card:hover {
+  box-shadow: 0 8px 24px rgba(80,20,140,0.18);
+  transform: translateY(-8px) scale(1.03);
+  z-index: 1;
+}
+
+.card-img-area {
+  position: relative;
+  background: #232323;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card-img {
+  width: 80px;
+  height: 80px;
+  margin-top: 8px;
+  object-fit: contain;
+}
+
+.heart-icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 50%;
+  transition: background 0.18s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heart-shape {
+  transition: fill 0.18s;
+  fill: #ccc;
+}
+
+.heart-icon.active .heart-shape {
+  fill: #6a2ca1 !important;
+}
+
+.heart-icon:hover {
+  background: #ece3fc;
+}
+
+.card-content {
+  background: transparent;
+  padding: 18px 18px 12px 18px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.card-title {
+  margin: 0 0 8px 0;
+  color: #50148c;
+  font-size: 1.22rem;
+  font-weight: bold;
+}
+
+.card-desc {
+  color: #232323;
+  font-size: 1rem;
+  margin: 0 0 12px 0;
+  flex-grow: 1;
+}
+
+.card-lang {
+  color: #232323;
+  font-size: 1.03rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.card-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.launch-btn {
+  background: #3C0062;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 13px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 1px 5px rgba(80,20,140,0.08);
+}
+
+.launch-btn:hover {
+  background: #50148c;
+  transform: scale(1.07);
+}
+
+.done-btn {
+  background: #7C5EB7;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 18px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 1px 5px rgba(80,20,140,0.08);
+}
+
+.done-btn:hover {
+  background: #7C5EB7;
+  color: #50148c;
+  transform: scale(1.07);
+}
+
+/* ----------------- RESPONSIVE DESIGN ----------------- */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0 24px;
+  }
+  
+  .nav-link {
+    font-size: 1rem;
+  }
+  
+  main {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hamburger-btn {
+    display: block;
+  }
+  
+  .navbar-menu {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    background: #50148c;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 16px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transform: translateX(-100%); /* Ocultar a la izquierda */
+    transition: transform 0.3s ease;
+    z-index: 100;
+  }
+  
+  .navbar-menu.show {
+    transform: translateX(0); /* Mostrar deslizando desde la izquierda */
+  }
+  
+  .nav-link {
+    width: 100%;
+    padding: 8px 0;
+    font-size: 1.1rem;
+  }
+
+  .nav-link.active {
+    font-size: 1.1rem;
+}
+  
+  .projects {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .project-card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-text {
+    font-size: 1.3rem;
+  }
+  
+  .card-title {
+    font-size: 1.1rem;
+  }
+  
+  .card-desc {
+    font-size: 0.95rem;
+  }
+  
+  .launch-btn, .done-btn {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}

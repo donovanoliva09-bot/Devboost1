@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | DevBoost</title>
+  <link rel="stylesheet" href="css/contacandaboutus.css">
+</head>
+<body class="fade-in">
+  <header>
+    <div class="logo" onclick="window.location.href='Home.php'">
+      <img src="img/logo1.png" alt="Cohete" class="icon" />
+      <span>DevBoost</span>
+    </div>
+
+    <!-- Botón hamburguesa -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav id="nav-menu">
+      <a href="home.php">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="contactus.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-hero">
+      <h1>Contact Us</h1>
+      <p>Have a question, feedback, or just want to say hello? Reach out!</p>
+    </section>
+
+    <section class="contact-info">
+      <div class="contact-card">
+        <img src="img/location.jpg" alt="Location Icon">
+        <h3>Visit Us</h3>
+        <p>Superate ADOC, San Salvador, El Salvador</p>
+      </div>
+      <div class="contact-card">
+        <img src="img/phone.jpg" alt="Phone Icon">
+        <h3>Call Us</h3>
+        <p>+503 1234 5678</p>
+      </div>
+      <div class="contact-card">
+        <img src="img/email.jpg" alt="Email Icon">
+        <h3>Email Us</h3>
+        <p>devboost@adoc.edu.sv</p>
+      </div>
+    </section>
+
+    <section class="contact-form-section">
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created by ¡Superate! ADOC students🚀</p>
+  </footer>
+
+  <script src="transition.js"></script>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
